@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uitest.administrator.shoulderby.activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:background="@drawable/background">
+
+        <EditText
+            android:id="@+id/et_login_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="152dp"
+            android:ems="10"
+            android:hint="用户名"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_login_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/et_login_name"
+            android:layout_alignLeft="@+id/et_login_name"
+            android:layout_below="@+id/et_login_name"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="密     码"/>
+
+        <Button
+            android:id="@+id/btn_login_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_login_register"
+            android:layout_alignBottom="@+id/btn_login_register"
+            android:layout_alignStart="@+id/et_login_pwd"
+            android:layout_alignLeft="@+id/et_login_pwd"
+            android:background="#00aaff"
+            android:text="登陆"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/et_login_pwd"
+            android:layout_alignRight="@+id/et_login_pwd"
+            android:layout_below="@+id/et_login_pwd"
+            android:layout_marginTop="17dp"
+            android:background="#00aaff"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

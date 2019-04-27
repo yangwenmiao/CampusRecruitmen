@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_chat_head"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        app:srcCompat="@drawable/me_photo" />
+
+    <TextView
+        android:id="@+id/tv_chatitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_chat_head"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="客服陈文良"
+        android:textSize="23dp"/>
+
+    <TextView
+        android:id="@+id/tv_chatitem_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_chat_head"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="35dp"
+        android:text="您好，欢迎登陆兼并兼！"
+        android:textSize="20dp"/>
+</RelativeLayout>
